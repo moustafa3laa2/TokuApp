@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toku/screens/family_screen.dart';
 import 'package:toku/screens/numbers_screen.dart';
 import 'package:toku/widgets/home_container.dart';
 
@@ -29,7 +30,7 @@ class HomeScreen extends StatelessWidget {
             onTapp: () => Navigator.push(
               context,
               MaterialPageRoute<void>(
-                builder: (BuildContext context) => const NumbersScreen(),
+                builder: (BuildContext context) => const FamilyScreen(),
               ),
             ),
             text: 'Family Members',

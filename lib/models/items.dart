@@ -1,9 +1,9 @@
-class Number {
+class Items {
   final String sound;
   final String image;
   final String jpName;
   final String enName;
-  const Number(
+  const Items(
       {required this.sound,
       required this.image,
       required this.jpName,

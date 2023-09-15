@@ -1,65 +1,65 @@
 import 'package:flutter/material.dart';
-import 'package:toku/models/number.dart';
-import 'package:toku/widgets/numbers_category.dart';
+import 'package:toku/models/items.dart';
+import 'package:toku/widgets/items_category.dart';
 
 class NumbersScreen extends StatelessWidget {
   const NumbersScreen({Key? key}) : super(key: key);
-  final List<Number> numbers = const [
-    Number(
+  final List<Items> items = const [
+    Items(
       sound: 'sounds/numbers/number_one_sound.mp3',
       image: 'assets/images/numbers/number_one.png',
       jpName: 'Ichi',
       enName: 'one',
     ),
-    Number(
+    Items(
       sound: 'sounds/numbers/number_two_sound.mp3',
       image: 'assets/images/numbers/number_two.png',
       jpName: 'Ni',
       enName: 'two',
     ),
-    Number(
+    Items(
       sound: 'sounds/numbers/number_three_sound.mp3',
       image: 'assets/images/numbers/number_three.png',
       jpName: 'San',
       enName: 'three',
     ),
-    Number(
+    Items(
       sound: 'sounds/numbers/number_four_sound.mp3',
       image: 'assets/images/numbers/number_four.png',
       jpName: 'Yon',
       enName: 'four',
     ),
-    Number(
+    Items(
       sound: 'sounds/numbers/number_five_sound.mp3',
       image: 'assets/images/numbers/number_five.png',
       jpName: 'Go',
       enName: 'five',
     ),
-    Number(
+    Items(
       sound: 'sounds/numbers/number_six_sound.mp3',
       image: 'assets/images/numbers/number_six.png',
       jpName: 'Roku',
       enName: 'six',
     ),
-    Number(
+    Items(
       sound: 'sounds/numbers/number_seven_sound.mp3',
       image: 'assets/images/numbers/number_seven.png',
       jpName: 'Nana',
       enName: 'seven',
     ),
-    Number(
+    Items(
       sound: 'sounds/numbers/number_eight_sound.mp3',
       image: 'assets/images/numbers/number_eight.png',
       jpName: 'Hanci',
       enName: 'eight',
     ),
-    Number(
+    Items(
       sound: 'sounds/numbers/number_nine_sound.mp3',
       image: 'assets/images/numbers/number_nine.png',
       jpName: 'Kyū',
       enName: 'nine',
     ),
-    Number(
+    Items(
       sound: 'sounds/numbers/number_ten_sound.mp3',
       image: 'assets/images/numbers/number_ten.png',
       jpName: 'Jū',
@@ -75,9 +75,9 @@ class NumbersScreen extends StatelessWidget {
         backgroundColor: const Color(0xff46322B),
       ),
       body: ListView.builder(
-        itemCount: numbers.length,
+        itemCount: items.length,
         itemBuilder: (context, index) {
-          return NumbersCategory(number: numbers[index]);
+          return ItemsCategory(items: items[index],color: const Color(0xffF99531),);
         },
       ),
     );

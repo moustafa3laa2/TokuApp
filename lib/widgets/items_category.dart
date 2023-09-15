@@ -1,21 +1,22 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:toku/models/number.dart';
-import 'package:audioplayers/audioplayers.dart';
+import 'package:toku/models/items.dart';
 
-class NumbersCategory extends StatelessWidget {
-  const NumbersCategory({Key? key, required this.number}) : super(key: key);
-  final Number number;
+class ItemsCategory extends StatelessWidget {
+  const ItemsCategory({Key? key, required this.items,required this.color}) : super(key: key);
+  final Items items;
+  final Color color;
+  
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      color: const Color(0xffF99531),
+      color: color,
       child: Row(
         children: [
           Container(
-              color: const Color(0xffFFF6DC), child: Image.asset(number.image)),
+              color: const Color(0xffFFF6DC), child: Image.asset(items.image)),
           Padding(
             padding: const EdgeInsets.only(left: 16),
             child: Column(
@@ -23,11 +24,11 @@ class NumbersCategory extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  number.jpName,
+                  items.jpName,
                   style: const TextStyle(color: Colors.white, fontSize: 18),
                 ),
                 Text(
-                  number.enName,
+                  items.enName,
                   style: const TextStyle(color: Colors.white, fontSize: 18),
                 ),
               ],
@@ -40,7 +41,7 @@ class NumbersCategory extends StatelessWidget {
               onPressed: () {
                 final player = AudioPlayer();
                 player.play(
-                  AssetSource(number.sound),
+                  AssetSource(items.sound),
                 );
               },
               icon: const Icon(
