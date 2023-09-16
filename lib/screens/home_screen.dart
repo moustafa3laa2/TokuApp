@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toku/screens/colors_screen.dart';
 import 'package:toku/screens/family_screen.dart';
 import 'package:toku/screens/numbers_screen.dart';
+import 'package:toku/screens/phrases_screen.dart';
 import 'package:toku/widgets/home_container.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -25,7 +26,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             text: 'Numbers',
-            ContainerColor: const Color(0xffF99531),
+            containerColor: const Color(0xffF99531),
           ),
           HomeContainer(
             onTapp: () => Navigator.push(
@@ -35,7 +36,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             text: 'Family Members',
-            ContainerColor: const Color(0xff528032),
+            containerColor: const Color(0xff528032),
           ),
           HomeContainer(
             onTapp: () => Navigator.push(
@@ -45,17 +46,17 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             text: 'Colors',
-            ContainerColor: const Color(0xff7D40A2),
+            containerColor: const Color(0xff7D40A2),
           ),
           HomeContainer(
             onTapp: () => Navigator.push(
               context,
               MaterialPageRoute<void>(
-                builder: (BuildContext context) => const NumbersScreen(),
+                builder: (BuildContext context) => const PhrasesScreen(),
               ),
             ),
             text: 'Phrases',
-            ContainerColor: const Color(0xff47A5CB),
+            containerColor: const Color(0xff47A5CB),
           ),
         ],
       ),

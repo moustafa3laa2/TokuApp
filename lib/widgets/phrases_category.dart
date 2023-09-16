@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:toku/models/items.dart';
+import 'package:toku/models/phrases_model.dart';
 
-class ItemsCategory extends StatelessWidget {
-  const ItemsCategory({Key? key, required this.items, required this.color})
-      : super(key: key);
-  final Items items;
+class PhrasesCategory extends StatelessWidget {
+  const PhrasesCategory({Key? key, required this.phrases,required this.color}) : super(key: key);
+  final PhrasesModel phrases;
   final Color color;
+  
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +14,6 @@ class ItemsCategory extends StatelessWidget {
       color: color,
       child: Row(
         children: [
-          Container(
-              color: const Color(0xffFFF6DC), child: Image.asset(items.image)),
           Padding(
             padding: const EdgeInsets.only(left: 16),
             child: Column(
@@ -23,12 +21,12 @@ class ItemsCategory extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  items.jpName,
-                  style: const TextStyle(color: Colors.white, fontSize: 18),
+                  phrases.jpName,
+                  style: const TextStyle(color: Colors.white, fontSize: 16),
                 ),
                 Text(
-                  items.enName,
-                  style: const TextStyle(color: Colors.white, fontSize: 18),
+                  phrases.enName,
+                  style: const TextStyle(color: Colors.white, fontSize: 16),
                 ),
               ],
             ),
@@ -38,7 +36,7 @@ class ItemsCategory extends StatelessWidget {
             padding: const EdgeInsets.only(right: 10),
             child: IconButton(
               onPressed: () {
-                items.plauSound();
+               phrases.playSound();
               },
               icon: const Icon(
                 Icons.play_arrow,

@@ -1,3 +1,5 @@
+import 'package:audioplayers/audioplayers.dart';
+
 class Items {
   final String sound;
   final String image;
@@ -8,4 +10,11 @@ class Items {
       required this.image,
       required this.jpName,
       required this.enName});
+
+  plauSound() {
+    final player = AudioPlayer();
+    player.play(
+      AssetSource(sound),
+    );
+  }
 }

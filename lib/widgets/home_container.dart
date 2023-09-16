@@ -4,11 +4,11 @@ class HomeContainer extends StatelessWidget {
   HomeContainer(
       {Key? key,
       required this.text,
-      required this.ContainerColor,
+      required this.containerColor,
       required this.onTapp})
       : super(key: key);
   final String text;
-  final Color ContainerColor;
+  final Color containerColor;
   final Function() onTapp;
 
   @override
@@ -18,9 +18,9 @@ class HomeContainer extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.only(left: 24),
         alignment: Alignment.centerLeft,
-        height: 65,
+        height: MediaQuery.of(context).size.height * 0.09,
         width: double.infinity,
-        color: ContainerColor,
+        color: containerColor,
         child: Text(
           text,
           style: const TextStyle(fontSize: 18, color: Colors.white),
