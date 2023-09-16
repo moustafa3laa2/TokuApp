@@ -18,7 +18,7 @@ class FamilyScreen extends StatelessWidget {
     Items(
         sound: 'sounds/family_members/grand father.wav',
         image: 'assets/images/family_members/family_grandfather.png',
-        jpName: 'Chichioya',
+        jpName: 'Sofu',
         enName: 'Grandfather'),
     Items(
         sound: 'sounds/family_members/mother.wav',
@@ -28,32 +28,32 @@ class FamilyScreen extends StatelessWidget {
     Items(
         sound: 'sounds/family_members/grand mother.wav',
         image: 'assets/images/family_members/family_grandmother.png',
-        jpName: 'Chichioya',
+        jpName: 'Haha',
         enName: 'Grandmother'),
     Items(
         sound: 'sounds/family_members/older bother.wav',
         image: 'assets/images/family_members/family_older_brother.png',
-        jpName: 'Chichioya',
+        jpName: 'ani',
         enName: 'Older Brother'),
     Items(
         sound: 'sounds/family_members/older sister.wav',
         image: 'assets/images/family_members/family_older_sister.png',
-        jpName: 'Chichioya',
+        jpName: 'Ane',
         enName: 'Older Sister'),
     Items(
         sound: 'sounds/family_members/son.wav',
         image: 'assets/images/family_members/family_son.png',
-        jpName: 'Chichioya',
+        jpName: 'Musuko',
         enName: 'Son'),
     Items(
         sound: 'sound/family_members/younger brohter.wav',
         image: 'assets/images/family_members/family_younger_brother.png',
-        jpName: 'Chichioya',
+        jpName: 'Otouto',
         enName: 'Younger Brother'),
     Items(
         sound: 'sounds/family_members/younger sister.wav',
         image: 'assets/images/family_members/family_younger_sister.png',
-        jpName: 'Chichioya',
+        jpName: 'Imouto',
         enName: 'Younger Sister'),
   ];
 

@@ -8,42 +8,42 @@ class ColorsScreen extends StatelessWidget {
     Items(
         sound: 'sounds/colors/black.wav',
         image: 'assets/images/colors/color_black.png',
-        jpName: 'Chichioya',
+        jpName: 'Kuro',
         enName: 'Black'),
     Items(
         sound: 'sounds/colors/brown.wav',
         image: 'assets/images/colors/color_brown.png',
-        jpName: 'Musume',
+        jpName: 'Chairo',
         enName: 'Brown'),
     Items(
         sound: 'sounds/colors/dusty yellow.wav',
         image: 'assets/images/colors/color_dusty_yellow.png',
-        jpName: 'Chichioya',
+        jpName: 'Kusunda kiiro',
         enName: 'Dusty Yellow'),
     Items(
         sound: 'sounds/colors/gray.wav',
         image: 'assets/images/colors/color_gray.png',
-        jpName: 'Chichioya',
+        jpName: 'Haiiro',
         enName: 'Gray'),
     Items(
         sound: 'sounds/colors/green.wav',
         image: 'assets/images/colors/color_green.png',
-        jpName: 'Chichioya',
+        jpName: 'Midori',
         enName: 'Green'),
     Items(
         sound: 'sounds/colors/red.wav',
         image: 'assets/images/colors/color_red.png',
-        jpName: 'Chichioya',
+        jpName: 'Aka',
         enName: 'Red'),
     Items(
         sound: 'sounds/colors/white.wav',
         image: 'assets/images/colors/color_white.png',
-        jpName: 'Chichioya',
+        jpName: 'Shiro',
         enName: 'White'),
     Items(
         sound: 'sounds/colors/yellow.wav',
         image: 'assets/images/colors/yellow.png',
-        jpName: 'Chichioya',
+        jpName: 'Kiiro',
         enName: 'Yellow'),
    
   ];
